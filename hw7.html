@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <script src="http://api.asilu.com/cdn/jquery.js,jquery.backstretch.min.js" type="text/javascript"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<nav class="navbar navbar-light" style="background-color:	#5E86C1;">
+  <a class="navbar-brand" href="#">WSSE</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="hw1.html">作業一</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="hw2.html">作業二</a>
+      </li>
+	        <li class="nav-item">
+        <a class="nav-link" href="hw3.html">作業三</a>
+      </li>
+	        <li class="nav-item">
+        <a class="nav-link" href="hw4.html">作業四</a>
+      </li>
+	        <li class="nav-item">
+        <a class="nav-link" href="hw5.html">作業五</a>
+      </li>
+	        <li class="nav-item">
+        <a class="nav-link" href="hw6.html">作業六</a>
+      </li>
+	        <li class="nav-item">
+        <a class="nav-link" href="hw7.html">作業七</a>
+      </li>
+             </li>
+          <li class="nav-item">
+        <a class="nav-link" href="hw8.html">作業八</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+	
+    <title>WSSE</title>
+  </head>
+  
+  
+  <body>
+<script type="text/javascript">
+$(".container").css({ opacity: .8 }); 
+$.backstretch([
+		'1.jpg',
+		'2.jpg'
+	], {
+		fade : 1000, // 動畫時長
+		duration : 3000 // 切換延時
+});
+</script>
+<html>
+<head>
+   <meta charset = "utf-8">
+   <style type = "text/css">
+      .box { border: 1px solid black; padding: 10px }
+   </style>
+   <title>Lab 1</title>
+   <script>
+      var asyncRequest; // variable to hold XMLHttpRequest object
+
+      // set up event handlers
+      function registerListeners()
+      {
+         var img;
+         img = document.getElementById( "xml/cpphtp" );
+         img.addEventListener( "mouseover", 
+            function() { getContent( "xml/cpphtp6.xml" ); }, false ); 
+         img.addEventListener( "mouseout", clearContent, false ); 
+         img = document.getElementById( "xml/iw3htp" );
+         img.addEventListener( "mouseover", 
+            function() { getContent( "xml/iw3htp4.xml" ); }, false ); 
+         img.addEventListener( "mouseout", clearContent, false ); 
+         img = document.getElementById( "xml/jhtp" );
+         img.addEventListener( "mouseover", 
+            function() { getContent( "xml/jhtp7.xml" ); }, false ); 
+         img.addEventListener( "mouseout", clearContent, false ); 
+         img = document.getElementById( "xml/vbhtp" );
+         img.addEventListener( "mouseover", 
+            function() { getContent( "xml/vbhtp3.xml" ); }, false ); 
+         img.addEventListener( "mouseout", clearContent, false ); 
+         img = document.getElementById( "xml/vcshtp" );
+         img.addEventListener( "mouseover", 
+            function() { getContent( "xml/vcsharphtp2.xml" ); }, false );
+         img.addEventListener( "mouseout", clearContent, false ); 
+         img = document.getElementById( "xml/javafp" );
+         img.addEventListener( "mouseover", 
+            function() { getContent( "xml/chtp5.xml" ); }, false ); 
+         img.addEventListener( "mouseout", clearContent, false ); 
+      } // end function registerListeners
+
+      // set up and send the asynchronous request.
+      function getContent( url )
+      {
+         // attempt to create XMLHttpRequest object and make the request
+         try
+         {
+            asyncRequest = new XMLHttpRequest(); // create request object
+
+            // register event handler
+            asyncRequest.addEventListener(
+               "readystatechange", stateChange, false); 
+            asyncRequest.open( "GET", url, true ); // prepare the request
+            asyncRequest.send( null ); // send the request
+         } // end try
+         catch ( exception )
+         {
+            alert( "Request failed." );
+         } // end catch
+      } // end function getContent
+      
+      // displays the response data on the page
+      function stateChange()
+      {
+         if ( asyncRequest.readyState == 4 && asyncRequest.status == 200 )
+         {
+            document.getElementById( "contentArea" ).innerHTML = 
+               asyncRequest.responseText; // places text in contentArea
+         } // end if
+      } // end function stateChange
+
+      // clear the content of the box
+      function clearContent()
+      {
+         document.getElementById( "contentArea" ).innerHTML = "";
+      } // end function clearContent
+
+      window.addEventListener( "load", registerListeners, false );
+   </script>
+</head>
+<body>
+   <h1>Mouse over a book for more information.</h1>
+   <img id = "cpphtp" alt = "C++ How to Program book cover"
+      src = "http://test.deitel.com/images/thumbs/cpphtp8.jpg">
+   <img id = "iw3htp" alt = "Internet & WWW How to Program book cover"
+      src = "http://test.deitel.com/images/thumbs/iw3htp5.jpg">
+   <img id = "jhtp" alt = "Java How to Program book cover"
+      src = "http://test.deitel.com/images/thumbs/jhtp9.jpg">
+   <img id = "vbhtp" alt = "Visual Basic 2010 How to Program book cover"
+      src = "http://test.deitel.com/images/thumbs/vb2010htp.jpg">
+   <img id = "vcshtp" alt = "Visual C# 2010 How to Program book cover" 
+      src = "http://test.deitel.com/images/thumbs/vcsharp2010htp.jpg">
+   <img id = "javafp" alt = "Java for Programmers book cover"
+      src = "http://test.deitel.com/images/thumbs/javafp.jpg">
+   <div class = "box" id = "contentArea"></div>
+</body>
+</html>
+
+<hr size="8px" align="center" width="100%">
+
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<meta charset="utf-8">
+<title> Lab 2 </title>
+<style type = "text/css">
+   li { display: inline-block; padding: 4px; width: 120px; }
+   img { border: 1px solid black }
+</style>
+<script>
+   var asyncRequest; // variable to hold XMLHttpRequest object
+  var arr = new Array();
+
+   // set up and send the asynchronous request to get the XML file
+   function getImages( url )
+   {
+      // attempt to create XMLHttpRequest object and make the request
+      try
+      {
+    
+    if (window.XMLHttpRequest) {
+    asyncRequest = new XMLHttpRequest();
+    
+    } else {
+    // code for IE6, IE5
+    asyncRequest = new ActiveXObject("Microsoft.XMLHTTP");
+    
+    }
+         //asyncRequest = new XMLHttpRequest(); // create request object
+
+         // register event handler
+     
+         asyncRequest.addEventListener(
+            "readystatechange", processResponse, false); 
+     
+         asyncRequest.open( "GET", url, true ); // prepare the request
+     
+         asyncRequest.send( null ); // send the request
+     
+      } // end try
+      catch ( exception )
+      {
+         alert( "Request Failed" );
+      } // end catch
+   } // end function getImages
+
+   
+   
+   // parses the XML response; dynamically creates an undordered list and 
+   // populates it with the response data; displays the list on the page
+   function processResponse()
+   {
+      // if request completed successfully and responseXML is non-null
+      if ( asyncRequest.readyState == 4 && asyncRequest.status == 200 && 
+         asyncRequest.responseXML )
+      {
+         clearImages(); // prepare to display a new set of images
+     document.getElementById( "info" ).innerHTML = ""; 
+     arr.length = 0
+
+         // get the covers from the responseXML
+         var covers = asyncRequest.responseXML.getElementsByTagName(
+            "cover" )
+
+         // get base URL for the images
+         var baseUrl = asyncRequest.responseXML.getElementsByTagName( 
+            "baseurl" ).item( 0 ).firstChild.nodeValue;
+         
+         // get the placeholder div element named covers
+         var output = document.getElementById( "covers" );
+         
+         // create an unordered list to display the images
+         var imagesUL = document.createElement( "ul" );
+         // place images in unordered list
+         for ( var i = 0; i < covers.length; ++i )
+         {
+     
+            var cover = covers.item( i ); // get a cover from covers array
+         
+            // get the image filename
+            var image = cover.getElementsByTagName( "image" ).
+               item( 0 ).firstChild.nodeValue;
+      
+      
+      var title = cover.getElementsByTagName( "title" ).
+               item( 0 ).firstChild.nodeValue;
+         
+       arr.push(title);
+       
+            // create li and img element to display the image
+            var imageLI = document.createElement( "li" );
+            var imageTag = document.createElement( "img" );
+      
+      // set img element's src attribute
+            imageTag.setAttribute( "src", baseUrl + escape( image ) ); 
+      imageTag.setAttribute( "id", i); 
+            imageLI.appendChild( imageTag ); // place img in li
+            imagesUL.appendChild( imageLI ); // place li in ul
+         } // end for statement
+    
+         output.appendChild( imagesUL ); // append ul to covers div
+     
+      var description = document.getElementById("info");
+      var test = document.getElementsByTagName( "img" );
+      for (var i = 0; i < test.length; ++i ){
+       test[i].addEventListener(
+      "mouseover", function() {
+        description.textContent = arr[this.id];
+      }, false ); 
+      }
+  
+      } // end if 
+   } // end function processResponse
+
+   // clears the covers div
+   function clearImages()
+   {
+      document.getElementById( "covers" ).innerHTML = ""; 
+   } // end function clearImages
+
+   // register event listeners
+   function registerListeners()
+   {
+      document.getElementById( "all" ).addEventListener(
+         "click", function() { getImages( "xml/all.xml" ); }, false ); 
+      document.getElementById( "simply" ).addEventListener(
+         "click", function() { getImages( "xml/simply.xml" ); }, false ); 
+      document.getElementById( "howto" ).addEventListener(
+         "click", function() { getImages( "xml/howto.xml" ); }, false ); 
+      document.getElementById( "dotnet" ).addEventListener(
+         "click", function() { getImages( "xml/dotnet.xml" ); }, false ); 
+      document.getElementById( "javaccpp" ).addEventListener(
+         "click", function() { getImages( "xml/javaccpp.xml" ); }, false ); 
+      document.getElementById( "none" ).addEventListener(
+         "click", clearImages, false ); 
+   } // end function registerListeners
+   
+   function g(){
+  alert("...");
+   }
+   
+   window.addEventListener( "load", registerListeners, false );
+   </script>
+</head>
+<body>
+   <input type = "radio" name ="Books" value = "all" 
+      id = "all"> All Books 
+   <input type = "radio" name = "Books" value = "simply" 
+      id = "simply"> Simply Books 
+   <input type = "radio" name = "Books" value = "howto" 
+      id = "howto"> How to Program Books 
+   <input type = "radio" name = "Books" value = "dotnet" 
+      id = "dotnet"> .NET Books 
+   <input type = "radio" name = "Books" value = "javaccpp"
+      id = "javaccpp"> Java/C/C++ Books
+   <input type = "radio" checked name = "Books" value = "none"
+      id = "none"> None 
+   <div id = "covers"></div>
+   <div id = "info"></div>
+</body>
+</html>
+<hr size="8px" align="center" width="100%">
+
+<html>
+<head>
+
+ 
+   <meta charset = "utf-8">
+   <style type = "text/css">
+      .box { border: 1px solid black; padding: 10px }
+   </style>
+   <title>Lab 4</title>
+
+</head>
+<body>
+  
+   <table class="table table-hover" style="width:500px; text-align:center; margin-left:20px;">
+  <tbody>
+  <tr style="height: 22px;">
+  <td style="height: 22px;"><strong>customerName</strong></td>
+  <td id="customerName" style="height: 22px;" colspan="3"></td>
+  </tr>
+  <tr style="height: 22px;">
+  <td style="height: 22px;"><strong>customerEmail</strong></td>
+  <td id="customerEmail" style="height: 22px;" colspan="3"></td>
+  </tr>
+  <tr style="height: 22.6px;">
+  <td style="height: 22.6px;" rowspan="3"><br><br><strong>shoppingList</strong></td>
+  <td style="height: 22.6px;"><strong>productID</strong></td>
+  <td style="height: 22.6px;"><strong>productName</strong></td>
+  <td style="height: 22.6px;"><strong>quantity</strong></td>
+  </tr>
+  <tr style="height: 22px;">
+  <td id="productID1" style="height: 22px;"></td>
+  <td id="productName1" style="height: 22px;"></td>
+  <td id="quantity1" style="height: 22px;"></td>
+  </tr>
+  <tr style="height: 22px;">
+  <td id="productID2" style="height: 22px;"></td>
+  <td id="productName2" style="height: 22px;"></td>
+  <td id="quantity2" style="height: 22px;"></td>
+  </tr>
+  </tbody>
+  </table>
+   
+    <script>
+  
+  var shoppingCart = '{"customerName":"Tim",'+
+  '"customerEmail": "tim@example.com",'+
+  '"orderID":"123456",'+
+  '"shoppingList":[' +
+  '{"productID":"12","productName":"iPad","quantity":"1" },' +
+  '{"productID":"28","productName":"HTC IS","quantity":"2" }]}';
+
+  obj = JSON.parse(shoppingCart);
+  document.getElementById("customerName").innerHTML = obj.customerName;
+  document.getElementById("customerEmail").innerHTML = obj.customerEmail;
+  
+  document.getElementById("productID1").innerHTML = obj.shoppingList[0].productID;
+  document.getElementById("productID2").innerHTML = obj.shoppingList[1].productID;
+  
+  document.getElementById("productName1").innerHTML = obj.shoppingList[0].productName;
+  document.getElementById("productName2").innerHTML = obj.shoppingList[1].productName;
+  
+  document.getElementById("quantity1").innerHTML = obj.shoppingList[0].quantity;
+  document.getElementById("quantity2").innerHTML = obj.shoppingList[1].quantity;
+  
+   </script>
+</body>
+</html>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>

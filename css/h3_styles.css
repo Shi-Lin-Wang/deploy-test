@@ -1,0 +1,34 @@
+/* h3_styles.css */
+b {
+	color:#DF80FF;
+	text-decoration:none;
+	font-size:50px;
+	text-align:center;
+	width:150px;
+	border-width:3px;
+	border-style:dashed;
+	border-color:#DF80FF;
+	padding:5px;
+
+	onclick:"https://www.google.com.tw/";
+}
+
+b:hover{
+	font-family: "Cooper Std Black";
+	color:#fff;
+	text-decoration:none;
+		color:#fff;
+	text-decoration:none;
+	background:#DF80FF;
+	border:dashed 3px #fff;
+	border-radius: 10px;
+}
+
+
+div{
+	
+}
+
+div:hover {
+
+}

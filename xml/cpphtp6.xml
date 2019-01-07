@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<book>
+<des>
+C++ How To Program 6th edition Easy-to-follow, carefully developed early classes and early objects approach
+Comprehensive coverage of the fundamentals of object-oriented programming in C++
+Optional automated teller machine (ATM) case study that teaches the fundamentals of software engineering and classmate object-oriented design with the UML 2.0
+Integrated case studies throughout the book including: the Time class (Chapter 9); the Employee class (Chapters 12 and 13) and the GradeBook class (Chapters 3-7) 
+Uses string and vector classes to make earlier examples more object-oriented
+New introduction to game programming with the OGRE libraries
+Overview of the forthcoming C++0x standard (due for release in 2009) 
+New coverage of the open source Boost libraries (several of which will be included in the C++0x standard)
+</des>
+</book>
+

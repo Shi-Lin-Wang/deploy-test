@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+
+<book>
+<des>
+ Java How to Program 7th Edition includes all of&nbsp;the core pedagogic material from Java How to Program, 6/e updated to the forthcoming Java Standard Edition 6 Java SE6; (code named "Mustang"). Check out the complete Table of Contents. Here's some of the book's key features:
+
+Updated the entire book to the new Java Standard Edition 6 ("Mustang").
+Attention to key software engineering community concepts, such as Web 2.0, SOA, web services,open source software, design patterns, mashups, refactoring and many more.
+Carefully coordinated with our new Java, Web 2.0, Ajax, and Programming Projects&nbsp;<a href="/ResourceCenters/ViewCompleteResourceCenterList/tabid/56/Default.aspx">Resource Centers</a>.
+New Ajax-enabled, event-driven web applications development with JavaServer Faces
+The servlets and JSP chapters have been dropped in favor of the new JavaServer Faces (JSF) treatment.
+New tools-based approach for web applications development.
+New web services chapter.
+New SwingWorker class for multithreaded user interfaces.
+New Java desktop integration( JDIC) features, such as splash screens and interactions with the system tray.
+New GroupLayout layout manager.
+New JDBC chapter introduces JDBC 4 and uses the MySQL and Java DB databases.
+New JTable sorting and filtering capabilities.
+New Java2D gradient capabilities.
+Strong treatment of generics and generic collections.
+New application using Google Maps web services.
+Java Blueprints technology.
+New StringBuilder class.
+New Resource Centers for Eclipse, NetBeans, Java Studio Creator 2, JBuilder and other popular environments.
+New coverage of annotations, and much more.
+</des>
+</book>
+

@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<book>
+<des>
+Internet and World Wide Web How to Program, 4th edition introduces students with little or no programming experience to the exciting world of Web-based applications. The book has been substantially reworked to 
+reflect today's Web 2.0 rich Internet application-development methodologies. A comprehensive book that 
+teaches the fundamentals needed to program on the Internet, this text provides in-depth coverage of introductory programming principles, various markup languages (XHTML, Dynamic HTML and XML), several scripting languages
+(JavaScript, PHP and Ruby/Ruby on Rails), Ajax, web services, Web servers (IIS and Apache) and relational databases (MySQL/Apache Derby/Java DB)-all the skills and tools needed to create dynamic Web-based applications. The text contains comprehensive introductions to ASP .NET 2.0 and JavaServer Faces (JSF). Hundreds of live-code examples of real applications throughout the book and on the accompanying CD allow readers to run the applications and see and hear the outputs. The book provides instruction on building Ajax-enabled rich Internet applications that enhance the presentation of online content and give web applications the look and feel of desktop applications. The chapter on Web 2.0 and Internet business exposes readers to a wide range of other topics associated with Web 2.0 applications and businesses. After mastering the material in this book, students will be well prepared to build real-world, industrial-strength, Web-based applications.
+</des>
+</book>
+

@@ -1,0 +1,6 @@
+
+/* External style sheet */
+
+h1      { color: blue; }
+b 		{ text-decoration: none; }
+b:hover { background-color: yellow; }

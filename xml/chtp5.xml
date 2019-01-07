@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<book>
+<des>
+The Fifth Edition of the world's best-selling C textbook is designed for introductory through intermediate 
+courses. Highly practical in approach, it introduces fundamental notions of structured programming and 
+software engineering and gets up to speed quickly. The book covers the full C language, key library functions 
+and object-oriented programming in C++. The Fifth Edition features an updated introduction to C++, 
+based on C++ How To Program, 5/e, and new chapters on the C99 standard, and game programming with 
+the Allegro C library.
+</des>
+</book>
+
